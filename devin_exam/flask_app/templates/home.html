@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Register</h1>
+
+    {% with messages = get_flashed_messages() %}     <!-- declare a variable called messages -->
+    {% if messages %}                            <!-- check if there are any messages -->
+        {% for message in messages %}            <!-- loop through the messages -->
+            <p>{{message}}</p>                   <!-- display each message in a paragraph tag -->
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+
+
+<form action="/users/register" , method = 'post'>
+    <div>
+        First name
+        <input name="first_name">
+    </div>
+        Last name
+        <input name="last_name">
+    <div>
+        email
+        <input name="email">
+    </div>
+        password
+        <input name="password">
+    <div>
+        confirm password
+        <input name="confirm_password">
+    </div>
+    <button>submit</button>
+</form>
+</body>
+
+<h2>login</h2>
+<form action="/users/login", method = "post" >
+
+    <div>
+        email
+        <input name="email">
+        <div>
+            password
+            <input name="password">
+        </div>
+        <p></p>
+        <button>login!</button>
+    </div>
+
+
+
+
+
+
+</form>
+</html>
+
+

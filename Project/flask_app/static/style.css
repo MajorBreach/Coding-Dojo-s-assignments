@@ -1,0 +1,86 @@
+* {
+    margin: 0% auto;
+    padding: 0% auto;
+
+}
+
+.welcome {
+    display: flex;
+}
+
+.Op {
+    color: black;
+
+}
+
+.container {
+    padding: 2em;
+}
+
+.padding {
+    padding: 1em;
+}
+
+.modal-grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-row-gap: 16px;
+}
+
+.modal-body h1,
+.modal-grid {
+    margin-bottom: 36px;
+}
+
+footer {
+    text-align: center;
+}
+
+
+.head {
+    margin: 0% auto;
+    padding: 0% auto;
+    display: flex;
+}
+
+.select {
+    margin-top: 30%;
+    display: flex;
+}
+
+.btn {
+    background: hidden;
+
+}
+
+.H1 {
+    color: black;
+}
+
+.button {
+    display: flex;
+    margin-top: 40%;
+    background-color: hidden;
+}
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+    display: flex;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
