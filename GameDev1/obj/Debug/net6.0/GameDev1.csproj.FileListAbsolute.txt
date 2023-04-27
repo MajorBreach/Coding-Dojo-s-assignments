@@ -1,0 +1,15 @@
+C:\Users\Corri\OneDrive\Desktop\school\C#\GameDev1\bin\Debug\net6.0\GameDev1.exe
+C:\Users\Corri\OneDrive\Desktop\school\C#\GameDev1\bin\Debug\net6.0\GameDev1.deps.json
+C:\Users\Corri\OneDrive\Desktop\school\C#\GameDev1\bin\Debug\net6.0\GameDev1.runtimeconfig.json
+C:\Users\Corri\OneDrive\Desktop\school\C#\GameDev1\bin\Debug\net6.0\GameDev1.dll
+C:\Users\Corri\OneDrive\Desktop\school\C#\GameDev1\bin\Debug\net6.0\GameDev1.pdb
+C:\Users\Corri\OneDrive\Desktop\school\C#\GameDev1\obj\Debug\net6.0\GameDev1.csproj.AssemblyReference.cache
+C:\Users\Corri\OneDrive\Desktop\school\C#\GameDev1\obj\Debug\net6.0\GameDev1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Corri\OneDrive\Desktop\school\C#\GameDev1\obj\Debug\net6.0\GameDev1.AssemblyInfoInputs.cache
+C:\Users\Corri\OneDrive\Desktop\school\C#\GameDev1\obj\Debug\net6.0\GameDev1.AssemblyInfo.cs
+C:\Users\Corri\OneDrive\Desktop\school\C#\GameDev1\obj\Debug\net6.0\GameDev1.csproj.CoreCompileInputs.cache
+C:\Users\Corri\OneDrive\Desktop\school\C#\GameDev1\obj\Debug\net6.0\GameDev1.dll
+C:\Users\Corri\OneDrive\Desktop\school\C#\GameDev1\obj\Debug\net6.0\refint\GameDev1.dll
+C:\Users\Corri\OneDrive\Desktop\school\C#\GameDev1\obj\Debug\net6.0\GameDev1.pdb
+C:\Users\Corri\OneDrive\Desktop\school\C#\GameDev1\obj\Debug\net6.0\GameDev1.genruntimeconfig.cache
+C:\Users\Corri\OneDrive\Desktop\school\C#\GameDev1\obj\Debug\net6.0\ref\GameDev1.dll
