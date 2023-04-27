@@ -1,0 +1,42 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model UseView
+
+
+
+
+<h1>Coupon Clipper 
+    <h3>
+    <a href="/coupon/new">Add Coupon  </a> |
+    <a href="/coupons">Home</a>|
+    <a href="/user/@Model.User.UserId">Account info</a> |
+    <a href="/logout">Logout</a>
+    </h3>
+</h1>
+<p></p>
+<h2>Welcome, @Context.Session.GetString("UserName")</h2>
+
+
+
+@foreach (Coupon u in Model.AllCoupons) 
+    {
+        <div>
+            <h3>@u.CouponCode</h3>
+            <h4>@u.Website</h4> 
+            <h4>@u.Description</h4> 
+            <h5>@u.Peoples.Count people have used this</h5>
+                @if (u.Peoples.Any(u => u.UserId  == Context.Session.GetInt32("UserId")))
+                {
+                    <p>Used this coupon already</p>
+                }
+                else
+                {
+                    <form asp-action="UseCoupon" asp-route-CouponId="@u.CouponId" method="post" >
+                        <button>Use This Coupon</button>
+                    </form>
+                }
+                <p>posted by @u.User.UserName </p>
+        </div>
+    } 
+        

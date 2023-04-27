@@ -1,0 +1,40 @@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div>
+    <p>Welcome @Context.Session.GetString("Username")</p>
+</div>
+<p></p>
+<div>
+    <p>@Context.Session.GetInt32("Usernum")</p>
+</div>
+<p></p>
+<div>
+<form asp-action="add" method="post">
+    <input type="hidden" name="add" value="add">
+    <button type="submit">Add 1</button>
+</form>
+</div>
+<div>
+<form asp-action="subtract" method="post">
+    <input type="hidden" name="subtract">
+    <button type="submit">subtract 1</button>
+</form>
+</div>
+<div>
+<form asp-action="multi" method="post">
+    <input type="hidden" name="multi">
+    <button type="submit">multiply by 2</button>
+</form>
+</div>
+<div>
+<form asp-action="random" method="post">
+    <input type="hidden" name="rando">
+    <button type="submit">adds random value</button>
+</form>
+<form asp-action="Logout" method="post">
+    <a href="/">logout</a>
+</form>
+
+</div>

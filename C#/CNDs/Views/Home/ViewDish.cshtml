@@ -1,0 +1,56 @@
+@{
+    ViewData["Title"] = "View";
+}
+@model List<Dish>
+    <div>
+    <h1>Check out the dishes made!</h1> 
+    <a href="/">Chefs</a> |
+    <a href="/new/chef">Add a Chef</a> |
+    <a href="/new/dish">Add a Dish</a>
+</div>
+<style>
+table.GeneratedTable {
+  width: 100%;
+  background-color: #575353;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #6200ff;
+  border-style: solid;
+  color: #f8f5f5;
+}
+
+table.GeneratedTable td, table.GeneratedTable th {
+  border-width: 2px;
+  border-color: #ff5e00;
+  border-style: solid;
+  padding: 3px;
+}
+
+table.GeneratedTable thead {
+  background-color: #0084ff;
+}
+</style>
+
+
+<table class="GeneratedTable">
+<thead>
+    <tr>
+    <th>Name</th>
+    <th>Chef</th>
+    <th>Tastiness</th>
+    <th>calories</th>
+    </tr>
+</thead>
+<tbody>
+    @foreach (Dish d in Model)
+    {
+        <tr>
+            <td>@d.DishName</td>
+            <td>@d.Chef.Name</td>
+            <td>@d.Tastiness</td>
+            <td>@d.calories</td>
+        </tr>
+    }
+
+</tbody>
+</table>

@@ -1,0 +1,19 @@
+@model UseView
+
+<h1>Account information
+    <h3>
+    <a href="/coupons">Home</a>
+    <a href="/coupon/new"></a> |
+    <a href="*">Account info</a>|
+    <a href="/logout">Logout</a>
+    </h3>
+
+
+<div>
+    <div>
+        <p>UserName: @Model.User.UserName</p>
+        <p>Email: @Model.User.Email</p>
+        <p>Coupons Posted : @Model.User.UserCoupon.Count</p>
+        <p># of coupons you used:@Model.User.AllPeople.Count</p>
+    </div>
+</div>

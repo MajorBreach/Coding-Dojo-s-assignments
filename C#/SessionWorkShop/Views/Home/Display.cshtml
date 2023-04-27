@@ -1,0 +1,30 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <p>Name:@Context.Session.GetString("Name")</p>
+    <p>Num:@Context.Session.GetInt32("Num")</p>
+</div>
+<div>
+    <form asp-action="Math" method="post">
+            <input type="hidden" name="button" value="add">
+            <button type="submit">+1</button>
+        </form>
+            <form asp-action="Math" method="post">
+                <input type="hidden" name="button" value="subtract">
+                <button type="submit">-1</button>
+            </form>
+            <form asp-action="Math" method="post">
+                <input type="hidden" name="button" value="multiply">
+                <button type="submit">*2</button>
+            </form>
+            <form asp-action="Math" method="post">
+                <input type="hidden" name="button" value="random">
+                <button type="submit">+random</button>
+            </form>
+        
+        <form asp-action="Logout" method="post">
+            <button  type="submit">Logout</button>
+        </form>
+</div>

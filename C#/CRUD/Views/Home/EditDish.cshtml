@@ -1,0 +1,47 @@
+@model Dish
+<div>
+    <h1>Hello please make a dish!</h1>
+    <a href="/">Home</a>
+    <a href="/new/dish">Make a Dish</a>
+</div>
+<p></p>
+
+<div>
+    <form asp-action="editDish" asp-controller="Home" asp-route-DishID="@Model.DishId"  method="post">
+    <label for="Chef">Chef's Name</label>
+    <input asp-for="Chef" type="text" value="@Model.Chef" >
+    <span asp-validation-for="Chef"></span>
+
+    <label for="Name">Name of Dish</label>
+    <input asp-for="Name" type="text"  value="@Model.Name">
+    <span asp-validation-for="Name"></span>
+
+    <p></p>
+    <label for="Calories"># of Calories</label>
+    <input asp-for="Calories" type="number"  id="" min="0" value="@Model.Calories">
+    <span asp-validation-for="Calories" ></span>
+
+    <p></p>
+    <div>
+        <label for="Tasiness">Tastiness</label>
+        <select asp-for="Tasiness"  id="" value="@Model.Tasiness">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <span asp-validation-for="Tasiness"></span>
+    </div>
+    <p></p>
+    <p></p>
+    <div>
+        
+        <label for="Desc">Description</label>
+        <p></p>
+        <textarea asp-for="Description"  cols="30" rows="10" value="@Model.Description" ></textarea>
+        <span asp-validation-for="Description"></span>
+    </div>
+    <button>Submit Dish</button>
+    </form>
+</div>

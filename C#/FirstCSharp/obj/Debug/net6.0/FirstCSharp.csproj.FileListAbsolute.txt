@@ -1,0 +1,15 @@
+C:\Users\Corri\OneDrive\Desktop\school\C#\FirstCSharp\bin\Debug\net6.0\FirstCSharp.exe
+C:\Users\Corri\OneDrive\Desktop\school\C#\FirstCSharp\bin\Debug\net6.0\FirstCSharp.deps.json
+C:\Users\Corri\OneDrive\Desktop\school\C#\FirstCSharp\bin\Debug\net6.0\FirstCSharp.runtimeconfig.json
+C:\Users\Corri\OneDrive\Desktop\school\C#\FirstCSharp\bin\Debug\net6.0\FirstCSharp.dll
+C:\Users\Corri\OneDrive\Desktop\school\C#\FirstCSharp\bin\Debug\net6.0\FirstCSharp.pdb
+C:\Users\Corri\OneDrive\Desktop\school\C#\FirstCSharp\obj\Debug\net6.0\FirstCSharp.csproj.AssemblyReference.cache
+C:\Users\Corri\OneDrive\Desktop\school\C#\FirstCSharp\obj\Debug\net6.0\FirstCSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Corri\OneDrive\Desktop\school\C#\FirstCSharp\obj\Debug\net6.0\FirstCSharp.AssemblyInfoInputs.cache
+C:\Users\Corri\OneDrive\Desktop\school\C#\FirstCSharp\obj\Debug\net6.0\FirstCSharp.AssemblyInfo.cs
+C:\Users\Corri\OneDrive\Desktop\school\C#\FirstCSharp\obj\Debug\net6.0\FirstCSharp.csproj.CoreCompileInputs.cache
+C:\Users\Corri\OneDrive\Desktop\school\C#\FirstCSharp\obj\Debug\net6.0\FirstCSharp.dll
+C:\Users\Corri\OneDrive\Desktop\school\C#\FirstCSharp\obj\Debug\net6.0\refint\FirstCSharp.dll
+C:\Users\Corri\OneDrive\Desktop\school\C#\FirstCSharp\obj\Debug\net6.0\FirstCSharp.pdb
+C:\Users\Corri\OneDrive\Desktop\school\C#\FirstCSharp\obj\Debug\net6.0\FirstCSharp.genruntimeconfig.cache
+C:\Users\Corri\OneDrive\Desktop\school\C#\FirstCSharp\obj\Debug\net6.0\ref\FirstCSharp.dll

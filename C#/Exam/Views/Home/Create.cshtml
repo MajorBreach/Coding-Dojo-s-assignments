@@ -1,0 +1,30 @@
+@model Coupon
+
+
+
+    <h3>Add Coupon</a> |
+    <p></p>
+    <a href="/coupons">Home</a>|
+    <a href="">Account info</a>|
+    <a href="/logout">Logout</a>
+    </h3>
+
+<div class="text-center">
+    <p></p>
+    <form asp-action="createCoupon" asp-controller="Home" method="post">
+        <label for="CouponCode">Coupon Code:</label>
+        <input asp-for="CouponCode" type="text">
+        <span asp-validation-for="CouponCode"></span>
+        <p></p>
+        <label for="Website">Website applicable on:</label>
+        <input asp-for="Website"type="text">
+        <span asp-validation-for="Website"></span>
+        <p></p>
+        <label for="Description">Description:</label>
+        <input asp-for="Description"type="text" >
+        <span asp-validation-for="Description"></span>
+        <p></p>
+        <button>Add coupon</button>
+        <p></p>
+    </form>
+</div>

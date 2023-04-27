@@ -1,0 +1,52 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model USEVIEW
+<h3>Welcome, This is your dashboard @Context.Session.GetInt32("UserId")</h3>
+    <H1>View all Weddings here</H1>
+<a href="/weddings">Home</a> |
+<a href="/weddings/new">Plan a wedding</a>|
+<a href="/logout">Logout</a>
+<div>
+<table>
+    <th>Wedding |</th>
+    <th>Date | </th>
+    <th>How many are attending |</th>
+    <th>Action |</th>
+    <tbody>
+    @foreach (Wedding w in ViewBag.EveryWedding) 
+    {
+        <tr>
+            <td><a href="/weddings/@w.WeddingId">@w.NameOne & @w.NameTwo</a></td>
+            <td>@w.Date</td>  
+            <td>@w.Guests.Count</td>
+                @if (Context.Session.GetInt32("UserId")== w.UserId)
+                {
+            <td>
+                <form asp-action="WeddingDelete"  asp-route-WeddingId="@w.WeddingId" method="post">
+                <button>Delete</button>
+                </form>
+            </td>
+                }
+                else if(w.Guests.Any(g => g.UserId == Context.Session.GetInt32("UserId")) == true)
+                {
+            <td>
+                <form asp-action="CantMakeIt"  asp-route-WeddingId="@w.WeddingId" method="post">
+                <button>Cant make it</button>
+                </form>
+            </td>
+                }
+                else{
+            <td>
+                <form asp-action="AddGuest"  asp-route-WeddingId="@w.WeddingId" method="post">
+                <button>I can go</button>
+                </form>
+            </td>
+                }
+        </tr>
+    } 
+        
+    </tbody>
+</table>
+</div>

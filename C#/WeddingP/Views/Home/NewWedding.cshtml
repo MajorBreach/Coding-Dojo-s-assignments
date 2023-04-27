@@ -1,0 +1,30 @@
+
+@model Wedding
+
+<a href="/weddings">Home</a> |
+<a href="/weddings/new">Plan a wedding</a>|
+<a href="/logout">Logout</a>
+
+<div class="text-center">
+    <p></p>
+    <form asp-action="createWedding" asp-controller="Home" method="post">
+        <label for="NameOne">NameOne:</label>
+        <input asp-for="NameOne" type="text">
+        <span asp-validation-for="NameOne"></span>
+        <p></p>
+        <label for="NameTwo">NameTwo:</label>
+        <input asp-for="NameTwo"type="text">
+        <span asp-validation-for="NameTwo"></span>
+        <p></p>
+        <label for="WeddingAddress">WeddingAddress:</label>
+        <input asp-for="WeddingAddress"type="text" >
+        <span asp-validation-for="WeddingAddress"></span>
+        <p></p>
+        <label for="Date">Wedding Date:</label>
+        <input asp-for="Date"type="Date" >
+        <span asp-validation-for="Date"></span>
+        <p></p>
+        <button>Add Wedding</button>
+        <p></p>
+    </form>
+</div>

@@ -1,0 +1,21 @@
+@model USEVIEW
+
+<a href="/weddings">Home</a> |
+<a href="/weddings/new">Plan a wedding</a>|
+<a href="/logout">Logout</a>
+
+<div>
+    <p>@Model.Wedding.NameOne</p>
+    <p>@Model.Wedding.NameTwo</p>
+    <p>@Model.Wedding.Date</p>
+</div>
+<div>
+    <ul>
+        @foreach (Guest g in Model.EveryGuest)
+        {
+            <li>@g.User.FirstName @g.User.LastName</li>
+            
+        }
+        
+    </ul>
+</div>

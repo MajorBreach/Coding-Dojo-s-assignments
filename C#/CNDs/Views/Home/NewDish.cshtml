@@ -1,0 +1,48 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model Dish
+
+<div>
+    <h1>Make a Dish</h1> 
+    <a href="/">Chefs</a> |
+    <a href="/dishes">Check out a dish</a> |
+    <a href="/new/chef">Make a new chef</a>
+</div>
+<p></p>
+<div>
+    <h2>Fill out the form!</h2>
+    <form asp-action="createDish" asp-controller="Home" method="post">
+        <div class="rendered-form">
+    <div class="formbuilder-text form-group field-text-1681418875875">
+        <label for="DishName" for="text-1681418875875" class="formbuilder-text-label">Name of dish</label>
+        <input asp-for="DishName" type="text" placeholder="Name" class="form-control">
+    </div>
+    <div class="formbuilder-number form-group field-number-1681418899297">
+        <label for="calories" for="number-1681418899297" class="formbuilder-number-label"># of calories</label>
+        <input asp-for="calories" type="number" class="form-control" >
+    </div>
+    <div class="formbuilder-select form-group field-select-1681418914546">
+        <select asp-for="ChefId" class="form-control">
+            @foreach (Chef c in ViewBag.Allchefs)
+            {
+                <option value="@c.ChefId">@c.Name</option>
+            }
+        </select>
+    </div>
+    <div class="formbuilder-select form-group field-select-1681418939410">
+        <label for="select-1681418939410" class="formbuilder-select-label">Tastiness</label>
+        <select asp-for="Tastiness" class="form-control" >
+            <option selected="true" id="select-1681418939410-0">1</option>
+            <option id="select-1681418939410-1">2</option>
+            <option id="select-1681418939410-2">3</option>
+            <option id="select-1681418939410-3">4</option>
+            <option id="select-1681418939410-4">5</option>
+        </select>
+    </div>
+    <div class="formbuilder-button form-group field-button-1681419092220">
+        <button type="submit" class="btn-success btn" name="button-1681419092220" access="false" style="success" id="button-1681419092220">Add Dish</button>
+    </div>
+</div>
+    </form>
+</div>

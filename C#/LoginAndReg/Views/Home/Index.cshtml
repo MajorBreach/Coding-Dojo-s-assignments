@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model User
+
+<div class="text-center">
+    <h1 class="display-4">Login or Register!</h1>
+</div>
+<div>
+    <form asp-action="UserCreate" method="post" asp-controller="User" style="border:1px solid blue" >
+<div class="container">
+    <h1>Sign Up</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+        <label asp-for="FirstName">FirstName:</label>
+    <input asp-for="FirstName" type="text" placeholder="FirstName">
+    <span asp-validation-for="FirstName" ></span>
+<p></p>
+        <label asp-for="LastName">LastName:</label>
+    <input asp-for="LastName" type="text" placeholder="LastName">
+    <span asp-validation-for="LastName" ></span>
+<p></p>
+    <label asp-for="Password">Password:</label>
+    <input asp-for="Password" type="password" placeholder="Password">
+    <span asp-validation-for="Password" ></span>
+<p></p>
+    <label asp-for="ConfirmPassword">ConfirmPassword:</label>
+    <input asp-for="ConfirmPassword" type="password" placeholder="ConfirmPassword"  >
+    <span asp-validation-for="ConfirmPassword" ></span>
+<p></p>
+    <div class="clearfix">
+    <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+</div>
+</form>
+</div>
+<p></p>
+<div>
+    <form asp-action="UserLogin" asp-controller="User" style="border:1px solid red">
+<div class="container">
+    <h1>Login</h1>
+    <p>Login with a Valid Email and Password</p>
+    <hr>
+    <label asp-for="FirstName">FirstName:</label>
+    <input asp-for="FirstName" type="text" placeholder="FirstName">
+    <span asp-validation-for="FirstName" ></span>
+<p></p>
+    <label asp-for="Password">Password:</label>
+    <input asp-for="Password" type="password" placeholder="Password">
+    <span asp-validation-for="Password" ></span>
+<p></p>
+    <div class="clearfix">
+    <button type="submit" class="Login">Login</button>
+    </div>
+</div>
+</form>
+</div>
